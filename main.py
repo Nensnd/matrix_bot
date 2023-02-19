@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 import telebot
 from telebot import types
 import time
-token = '' #API токен бота
+token = '6233306362:AAGa3XQ10aESz5vYoJV9lR-r22qBX6AQd9g' #API токен бота
 
 bot = telebot.TeleBot(token)
 
@@ -15,8 +15,9 @@ def main(message):
     bot.send_message(message.chat.id, text='Команда /map показывает состояние всей матрицы. (обновляется каждые 12 часов)')
     bot.send_message(message.chat.id, text='Чтобы поменять состояние пикселя , нужно написать команду в таком формате:')
     bot.send_message(message.chat.id, text='состояние пикселя (0 - черный, 1 - белый, 2 - красный, 3 - оранжевый, 4 - желтый, 5 - зеленый, 6 - голубой, 7 - фиолетовый, 8 - серый), координата по x (0 - 10240), координата по y (0 - 10240)')
+    bot.send_message(message.chat.id, text='вам будет виден косочек матрицы размером 256x256')
     bot.send_message(message.chat.id, text='пример: "5 160 90"')
-    bot.send_message(message.chat.id, text='Чтобы просто просмотреть маарицу , введите /view и координаты , выведется кусочек матрицы размером 1024x1024')
+    bot.send_message(message.chat.id, text='Чтобы просто просмотреть матрицу , введите /view и координаты , выведется кусочек матрицы размером 1024x1024')
     bot.send_message(message.chat.id, text='пример: "/view 160 70"')
 
 @bot.message_handler(commands=['map'])
@@ -163,6 +164,7 @@ def mainloop(message):
     croped = new_im.crop(((int(x) - cx * 2048)-128, (int(y) - cy * 2048)-128, (int(x) - cx * 2048) + 129, (int(y) - cy * 2048) + 129))
     c_end = croped.resize((2561, 2561))
     c_end.save('croped.png', 'PNG')
+    bot.send_message(message.chat.id, text= "Ваш запрос обработан! матрица изменена !")
     bot.send_photo(message.chat.id, c_end)
 
     #img_01
