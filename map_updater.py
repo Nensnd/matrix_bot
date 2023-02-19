@@ -1,32 +1,6 @@
 import time
 from PIL import Image
 
-'''img_01 = Image.open("digit-number-img-0.jpg")
-img_02 = Image.open("digit-number-img-1.jpg")
-img_03 = Image.open("digit-number-img-2.jpg")
-img_04 = Image.open("digit-number-img-3.jpg")
-img_05 = Image.open("digit-number-img-0.jpg")
-img_06 = Image.open("digit-number-img-1.jpg")
-img_07 = Image.open("digit-number-img-2.jpg")
-img_08 = Image.open("digit-number-img-3.jpg")
-img_09 = Image.open("digit-number-img-0.jpg")
-img_10 = Image.open("digit-number-img-1.jpg")
-img_11 = Image.open("digit-number-img-2.jpg")
-img_12 = Image.open("digit-number-img-3.jpg")
-img_13 = Image.open("digit-number-img-0.jpg")
-img_14 = Image.open("digit-number-img-1.jpg")
-img_15 = Image.open("digit-number-img-2.jpg")
-img_16 = Image.open("digit-number-img-3.jpg")
-img_17 = Image.open("digit-number-img-0.jpg")
-img_18 = Image.open("digit-number-img-1.jpg")
-img_19 = Image.open("digit-number-img-2.jpg")
-img_20 = Image.open("digit-number-img-3.jpg")
-img_21 = Image.open("digit-number-img-0.jpg")
-img_22 = Image.open("digit-number-img-1.jpg")
-img_23 = Image.open("digit-number-img-2.jpg")
-img_24 = Image.open("digit-number-img-3.jpg")
-img_25 = Image.open("digit-number-img-0.jpg")
-'''
 img = []
 o = []
 for i in range(1, 6):
