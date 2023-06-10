@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 import telebot
 from telebot import types
 import time
-token = '6233306362:AAGa3XQ10aESz5vYoJV9lR-r22qBX6AQd9g' #API токен бота
+token = '' #API токен бота
 
 bot = telebot.TeleBot(token)
 
