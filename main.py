@@ -58,10 +58,10 @@ def view(message):
     if cy < 1:
         cy = 1
 
-    img_01 = Image.open("C:/Users/maxga/PycharmProjects/matrix_bot/matrix/"+str(cx)+"/"+str(cy)+".png")
-    img_02 = Image.open("C:/Users/maxga/PycharmProjects/matrix_bot/matrix/"+str(cx + 1)+"/"+str(cy)+".png")
-    img_03 = Image.open("C:/Users/maxga/PycharmProjects/matrix_bot/matrix/"+str(cx)+"/"+str(cy + 1)+".png")
-    img_04 = Image.open("C:/Users/maxga/PycharmProjects/matrix_bot/matrix/"+str(cx + 1)+"/"+str(cy + 1)+".png")
+    img_01 = Image.open("/matrix/"+str(cx)+"/"+str(cy)+".png")
+    img_02 = Image.open("/matrix/"+str(cx + 1)+"/"+str(cy)+".png")
+    img_03 = Image.open("/matrix/"+str(cx)+"/"+str(cy + 1)+".png")
+    img_04 = Image.open("/matrix/"+str(cx + 1)+"/"+str(cy + 1)+".png")
 
     img_01_size = img_01.size
     new_im = Image.new('RGB', (2 * img_01_size[0], 2 * img_01_size[1]), (250, 250, 250))
@@ -115,10 +115,10 @@ def mainloop(message):
     if cy < 1:
         cy = 1
 
-    img_01 = Image.open("C:/Users/maxga/PycharmProjects/matrix_bot/matrix/"+str(cx)+"/"+str(cy)+".png")
-    img_02 = Image.open("C:/Users/maxga/PycharmProjects/matrix_bot/matrix/"+str(cx + 1)+"/"+str(cy)+".png")
-    img_03 = Image.open("C:/Users/maxga/PycharmProjects/matrix_bot/matrix/"+str(cx)+"/"+str(cy + 1)+".png")
-    img_04 = Image.open("C:/Users/maxga/PycharmProjects/matrix_bot/matrix/"+str(cx + 1)+"/"+str(cy + 1)+".png")
+    img_01 = Image.open("/matrix/"+str(cx)+"/"+str(cy)+".png")
+    img_02 = Image.open("/matrix/"+str(cx + 1)+"/"+str(cy)+".png")
+    img_03 = Image.open("/matrix/"+str(cx)+"/"+str(cy + 1)+".png")
+    img_04 = Image.open("/matrix/"+str(cx + 1)+"/"+str(cy + 1)+".png")
 
     img_01_size = img_01.size
 
@@ -304,10 +304,10 @@ def mainloop(message):
         cx = 1
 
 
-    img_01.save("C:/Users/maxga/PycharmProjects/matrix_bot/matrix/"+str(cx)+"/"+str(cy)+".png")
-    img_02.save("C:/Users/maxga/PycharmProjects/matrix_bot/matrix/" + str(cx + 1) + "/" + str(cy) + ".png")
-    img_03.save("C:/Users/maxga/PycharmProjects/matrix_bot/matrix/" + str(cx) + "/" + str(cy + 1) + ".png")
-    img_04.save("C:/Users/maxga/PycharmProjects/matrix_bot/matrix/" + str(cx + 1) + "/" + str(cy + 1) + ".png")
+    img_01.save("/matrix/"+str(cx)+"/"+str(cy)+".png")
+    img_02.save("/matrix/" + str(cx + 1) + "/" + str(cy) + ".png")
+    img_03.save("/matrix/" + str(cx) + "/" + str(cy + 1) + ".png")
+    img_04.save("/matrix/" + str(cx + 1) + "/" + str(cy + 1) + ".png")
 
 
 
