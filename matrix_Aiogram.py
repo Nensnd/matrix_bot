@@ -86,7 +86,6 @@ async def view(message):
     cy = cy - 1
     croped = new_im.crop(((int(x) - cx * 2048) - 512, (int(y) - cy * 2048) - 512, (int(x) - cx * 2048) + 513,(int(y) - cy * 2048) + 513))
     croped.save('view.png', 'PNG')
-    c_end = croped.resize((2561, 2561))
     c_end.save('view.png', 'PNG')
     photo = open('view.png', 'rb')
     await message.reply_document(photo)
