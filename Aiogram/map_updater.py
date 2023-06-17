@@ -31,7 +31,7 @@ img = []
 o = []
 for i in range(1, 6):
     for j in range(1, 6):
-       img.append(Image.open("C:/Users/maxga/PycharmProjects/matrix_bot/matrix/"+str(i)+"/"+str(j)+".png"))
+       img.append(Image.open("/matrix/"+str(i)+"/"+str(j)+".png"))
 img_01_size = [int(208), int(208)]
 
 new_im = Image.new('RGB', (5 * img_01_size[0], 5 * img_01_size[1]), (250, 250, 250))
