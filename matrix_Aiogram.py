@@ -5,14 +5,10 @@ import asyncio
 import logging
 from aiogram import Bot, Dispatcher, executor, types
 
-# Включаем логирование, чтобы не пропустить важные сообщения
 logging.basicConfig(level=logging.INFO)
-# Объект бота
 bot = Bot(token="")
-# Диспетчер
 dp = Dispatcher(bot)
 
-# Хэндлер на команду /start
 @dp.message_handler(commands=['start', 'help'])
 async def send_welcome(message: types.Message):
     await message.reply("Вы управляете виртуальной матрицей!")
@@ -23,11 +19,6 @@ async def send_welcome(message: types.Message):
     await message.reply("пример: '5 160 90'")
     await message.reply("Чтобы просто просмотреть матрицу , введите /view и координаты , выведется кусочек матрицы размером 1024x1024")
     await message.reply("пример: '/view 160 70'")
-
-
-
-
-
 
 @dp.message_handler(commands=['map'])
 async def map(message):
