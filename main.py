@@ -7,7 +7,7 @@ token = '' #API токен бота
 
 bot = telebot.TeleBot(token)
 
-# команда старт
+
 @bot.message_handler(commands=['start'])
 def main(message):
     bot.send_message(message.chat.id, text='Создатель этого бота: @maxim270409')
@@ -80,6 +80,7 @@ def view(message):
     c_end = croped.resize((2561, 2561))
     c_end.save('view.png', 'PNG')
     bot.send_photo(message.chat.id, c_end)
+    
 #обработка команд
 @bot.message_handler(content_types=['text'])
 def mainloop(message):
