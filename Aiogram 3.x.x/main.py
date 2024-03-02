@@ -128,7 +128,7 @@ async def orange(callback: types.CallbackQuery):
     await bot.send_message(chat_id=callback.from_user.id, text='Теперь напишите координаты через пробел')
 
 @dp.callback_query(F.data == "5")
-async def orange(callback: types.CallbackQuery):
+async def yellow(callback: types.CallbackQuery):
     global work
     global color
     color = 'yellow'
@@ -136,7 +136,7 @@ async def orange(callback: types.CallbackQuery):
     await bot.send_message(chat_id=callback.from_user.id, text='Теперь напишите координаты через пробел')
 
 @dp.callback_query(F.data == "6")
-async def orange(callback: types.CallbackQuery):
+async def green(callback: types.CallbackQuery):
     global work
     global color
     color = 'green'
@@ -144,7 +144,7 @@ async def orange(callback: types.CallbackQuery):
     await bot.send_message(chat_id=callback.from_user.id, text='Теперь напишите координаты через пробел')
 
 @dp.callback_query(F.data == "7")
-async def orange(callback: types.CallbackQuery):
+async def blue(callback: types.CallbackQuery):
     global work
     global color
     color = 'blue'
@@ -152,7 +152,7 @@ async def orange(callback: types.CallbackQuery):
     await bot.send_message(chat_id=callback.from_user.id, text='Теперь напишите координаты через пробел')
 
 @dp.callback_query(F.data == "8")
-async def orange(callback: types.CallbackQuery):
+async def purple(callback: types.CallbackQuery):
     global work
     global color
     color = 'purple'
@@ -160,7 +160,7 @@ async def orange(callback: types.CallbackQuery):
     await bot.send_message(chat_id=callback.from_user.id, text='Теперь напишите координаты через пробел')
 
 @dp.callback_query(F.data == "9")
-async def orange(callback: types.CallbackQuery):
+async def brown(callback: types.CallbackQuery):
     global work
     global color
     color = 'brown'
@@ -168,7 +168,7 @@ async def orange(callback: types.CallbackQuery):
     await bot.send_message(chat_id=callback.from_user.id, text='Теперь напишите координаты через пробел')
 
 @dp.callback_query(F.data == "10")
-async def black(callback: types.CallbackQuery):
+async def grey(callback: types.CallbackQuery):
     global work
     global color
     color = 'grey'
