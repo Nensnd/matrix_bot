@@ -14,7 +14,7 @@ work = 0
 logging.basicConfig(level=logging.INFO)
 
 # Объект бота
-bot = Bot(token="6233306362:AAGa3XQ10aESz5vYoJV9lR-r22qBX6AQd9g")
+bot = Bot(token="")
 
 # Диспетчер
 dp = Dispatcher()
