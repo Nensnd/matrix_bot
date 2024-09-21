@@ -26,7 +26,7 @@ async def cmd_start(message: types.Message):
 
 # Хэндлер на команду /map
 @dp.message(Command("map"))
-async def cmd_start(message: types.Message):
+async def map(message: types.Message):
     await message.reply_document(file("map.png"))
 
 # Хэндлер на команду /view
