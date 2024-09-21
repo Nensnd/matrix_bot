@@ -253,14 +253,11 @@ async def mainloop(message):
         cx = int(int(x) / 2048)
         cy = int(int(y) / 2048)
 
-        if cx < 1:
-            cx = 1
-
         if cy < 1:
             cy = 1
+        
         if cx < 1:
             cx = 1
-
 
         img_01.save("matrix/"+str(cx)+"/"+str(cy)+".png")
         img_02.save("matrix/" + str(cx + 1) + "/" + str(cy) + ".png")
