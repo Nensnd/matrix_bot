@@ -1,6 +1,6 @@
 import time
 from PIL import Image
-While True:
+while True:
     img = []
     o = []
     for i in range(1, 6):
@@ -40,3 +40,4 @@ While True:
     
     new_im.save("map.png", "PNG")
     time.sleep(3600)
+
