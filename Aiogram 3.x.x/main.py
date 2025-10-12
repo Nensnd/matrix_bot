@@ -37,7 +37,7 @@ async def view(message: types.Message):
     m.split()
 
     x = int(m.split()[0])
-    y = int(m.split()[1])
+    y = 10239 - int(m.split()[1])
 
     cx = int(int(x) / 2048)
     cy = int(int(y) / 2048)
@@ -184,7 +184,7 @@ async def mainloop(message):
         a = str(message.text)
         a = a.split()
         x = int(a[0])
-        y = int(a[1])
+        y = 10239 - int(a[1])
 
         cx = int(int(x) / 2048)
         cy = int(int(y) / 2048)
@@ -269,3 +269,4 @@ async def main():
     await dp.start_polling(bot)
 if __name__ == "__main__":
     asyncio.run(main())
+
